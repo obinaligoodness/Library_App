@@ -1,0 +1,29 @@
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>Title</title>#}
+{#</head>#}
+{#<body>#}
+{#<h1>Welcome to our library</h1>#}
+{#<p>Mr dominic and favourwhite</p>#}
+{##}
+{#</body>#}
+{#</html>#}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<h1>hi lets play on the playground</h1>
+<p>you are playing</p>
+{% for author in authors %}
+    <li>{{ author.first_name }}{{ author.last_name}}</li>
+{% endfor %}
+</body>
+</html>

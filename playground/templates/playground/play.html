@@ -1,0 +1,17 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<h1>hi lets play on the playground</h1>
+<p>you are playing</p>
+{% for student in Students %}
+    <li>{{ student.values }}</li>
+{% endfor %}
+</body>
+</html>
